@@ -5,6 +5,7 @@ name: neon-timestamp
 description: Returns the current timestamp as a string.
 outputs:
   timestamp:
+    description: Returns as the current time formatted as: YYYY-MM-DD HH-MM:SSZ
 runs:
   using: composite
   steps:
