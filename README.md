@@ -1,4 +1,4 @@
-# neon-timestamp
+# timestamp
 
 **INTERNAL USE ONLY:** This GitHub action is not intended for general use.  The only reason why this repo is public is because GitHub requires it.
 
@@ -8,7 +8,7 @@ Obtains the current date/time as a string.
 
 ```
 steps:
-- name: get-timestamp
+- name: timestamp
   uses: nforgeio-actions/neon-timestamp 
 - name: use-timestamp
   shell: pwsh
