@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # Returns the current timestamp as a string.
 
-name: neon-timestamp
+name: timestamp
 description: "Returns the current timestamp as a string"
 outputs:
   timestamp:
