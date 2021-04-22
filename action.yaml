@@ -13,7 +13,7 @@
 name: timestamp
 description: "Returns the current UTC timestamp as a string"
 outputs:
-  timestamp:
+  value:
     description: "Returns as the current time formatted like: YYYY-MM-DD HH-MM:SSZ"
 runs:
   using: node12
