@@ -33,4 +33,4 @@ Pop-Location
 
 $utcNow = [System.DateTime]::UtcNow.ToString("u")
 
-Set-ActionOutput "timestamp" $utcNow
+Set-ActionOutput "value" $utcNow
