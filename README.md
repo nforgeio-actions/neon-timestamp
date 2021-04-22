@@ -8,9 +8,9 @@ Obtains the current UTC date/time as a string.
 
 ```
 steps:
-- name: timestamp
+- id: get-timestamp
   uses: nforgeio-actions/neon-timestamp 
-- name: use-timestamp
+- id: use-timestamp
   shell: pwsh
   run: Write-Output "TIMESTAMP IS: " + ${{ steps.get-timestamp.timestamp }}
 ```
