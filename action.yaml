@@ -11,16 +11,11 @@
 # Returns the current timestamp as a string.
 
 name: timestamp
-description: "Returns the current timestamp as a string"
+description: "Returns the current UTC timestamp as a string"
 outputs:
   timestamp:
     description: "Returns as the current time formatted as: YYYY-MM-DD HH-MM:SSZ"
 runs:
-  using: composite
-  steps:
-  - name: get-timestamp
-    shell: pwsh
-    run: |
-      $utcNow = [System.DateTime]::UtcNow
-      Write-Output "::set-output name=reboot-required::" + $utcNow.ToString("u")
-      
+  using: node12
+  main: action.js
+
