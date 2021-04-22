@@ -14,7 +14,7 @@ name: timestamp
 description: "Returns the current UTC timestamp as a string"
 outputs:
   timestamp:
-    description: "Returns as the current time formatted as: YYYY-MM-DD HH-MM:SSZ"
+    description: "Returns as the current time formatted like: YYYY-MM-DD HH-MM:SSZ"
 runs:
   using: node12
   main: action.js
